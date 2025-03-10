@@ -1,0 +1,140 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Conteudo {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Artigo {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JanelaLogin {
+    color: white;
+    font-family: Roboto;
+    font-size: x-large;
+    text-align: center;
+    background-color: #2e2e2e69;
+    backdrop-filter: blur(20px);
+    width: 500px;
+    padding: 2.5%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 400px;
+}
+
+.campoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    translate: 45px;
+}
+
+.passwordIconF {
+    display: flex;
+    translate: -50px;
+    opacity: 0;
+}
+
+.passwordIcon {
+    display: flex;
+    translate: -50px;
+}
+
+.passwordIcon:hover {
+    cursor: pointer;
+}
+
+input {
+    color: white;
+    font-family: Roboto;
+    background: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 25px 0px 25px 50px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin: 10px;
+    width: 50%;
+}
+
+input::placeholder {
+    color: #e6e6e6;
+    font-family: Roboto;
+}
+
+div button {
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    background-color: #41ae4f;
+    padding: 20px 15px 20px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 25%;
+    margin: 10px;
+}
+
+div button:hover {
+    background-color: #31833c;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+p {
+    font-family: Roboto;
+    font-size: small;
+}
+
+a {
+    color: white;
+}
+
+#errorEmail,
+#error {
+    color: #e63636;
+    display: none;
+}
+
+#errorEmail {
+    font-size: small;
+}
+
+.checkGIF {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+
+.centralizarCheck {
+    display: none;
+    justify-content: center;
+}
+
+.semLoginTexto {
+    display: flex;
+    justify-content: center;
+}

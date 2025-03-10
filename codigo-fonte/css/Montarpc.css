@@ -1,0 +1,483 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: roboto;
+    /* background: radial-gradient(150% 80% at 10% 30%,
+            #41ae4f 1%, #2b7735 25%, #19441f 100%); */
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(20px)brightness(0.9);
+}
+
+main {
+    min-height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TITULO DAS SEÇÕES DA PAG */
+.titulopagina {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.titdesc {
+    margin-top: 10px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+.titlinha h1 {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* DIV DO PASSO 1 */
+#passo1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3vh;
+}
+
+/* Card */
+.btnCard {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    border-radius: 25px;
+    background-color: #2e2e2e;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+
+    width: 90vw;
+    padding: 5% 0%;
+
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btnCard:hover {
+    transform: scale(1.05);
+    background-color: #2E2E2E;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.btnCard div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    row-gap: 1vh;
+}
+
+/* textos dos cards */
+.opcoes {
+    color: white;
+    text-align: left;
+    font-size: x-large;
+
+    height: 50%;
+}
+
+.descricao {
+    color: white;
+    font-family: Roboto;
+    font-weight: 300;
+    text-align: left;
+    height: 100%;
+}
+
+/* Imagem do card */
+.imagem {
+    width: 100px;
+    height: 100px;
+
+    margin: 0px;
+
+    justify-self: center;
+    align-self: center;
+}
+
+/* -------- Passo 2 ---------- */
+#passo2 {
+    display: none;
+    flex-direction: column;
+    margin: 20px 20px;
+    justify-items: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* --- DIV QUE SEGURA CADA ORÇAMENTO ---- */
+.orcamentoDiv {
+    display: none;
+    gap: 10px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+/*  --- Botões de orçamento ---- */
+.btnOrc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1vh;
+
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    height: fit-content;
+    max-height: 90%;
+
+    width: 90vw;
+
+    padding: 5% 5%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btnOrc:hover {
+    transform: scale(1.05);
+    background-color: #2E2E2E;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/* -------- Textos dos botões de orçamento --------- */
+.titOrc {
+    color: white;
+    text-align: left;
+
+    width: 50%;
+}
+
+.descricao1 {
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    width: 90%;
+}
+
+
+/* Passo 3 */
+
+#passo3 {
+    display: none;
+    flex-direction: column;
+    margin: 20px 20px;
+    justify-items: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Baixo Orçamento */
+#valorLimiteBaixo {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 5vh);
+    row-gap: 1vh;
+    justify-items: center;
+}
+
+/* Custo Benefício */
+#valorLimiteMedio {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 5vh);
+    row-gap: 1vh;
+    justify-items: center;
+}
+
+/* Alto orçamento */
+#valorLimiteAlto {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 5vh);
+    row-gap: 1vh;
+    justify-items: center;
+}
+
+/*  botões dos valores */
+.btnValorLimite {
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+    width: 80%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btnValorLimite:hover {
+    transform: scale(1.05);
+    background-color: #2E2E2E;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Funções */
+#funcoes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin: 20px 20px;
+}
+
+/* Reiniciar */
+#reiniciar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+    width: 25vw;
+    height: 5vh;
+
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+#reiniciar:hover{
+    background-color: #2E2E2E;
+}
+
+/* Próxima página */
+#avancar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    float: right;
+
+    border-radius: 25px;
+    background: #2E2E2E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+    width: 25vw;
+    height: 5vh;
+
+    cursor: not-allowed;
+    transition: 0.2s ease-in-out;
+}
+
+#avancar:hover {
+    transform: scale(1.05);
+    background-color: #2E2E2E;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes pulsar {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+@media (min-width: 951px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "escolha1 escolha2"
+            "escolha1 escolha3"
+            "escolha1 botoes";
+
+        grid-template-rows: max-content;
+        grid-template-columns: max-content;
+        gap: 2vh;
+        height: fit-content;
+
+        padding: 2.5vw;
+
+    }
+
+    /* Titulo da página */
+    .titulopagina {
+        grid-area: titulo;
+
+        align-items: flex-start;
+        width: fit-content;
+        height: fit-content;
+
+        /* margin: 40px; */
+    }
+
+    /* Passo 1 ----- Cards */
+    #passo1 {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 3vh;
+        grid-area: escolha1;
+
+        margin-top: 50px;
+        width: 100%;
+        height: 45vh;
+
+    }
+
+    .btnCard {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        width: 30vw;
+        height: 45vh;
+        padding: 3vh;
+
+        background-color: #2e2e2e4b;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .btnCard div {
+        width: 100%;
+    }
+
+    /* ----- Conteúdo dos Cards ------  */
+    .opcoes {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .descricao {
+        text-align: center;
+        font-size: small;
+    }
+
+    .imagem {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* ------ Passo 2 ---------- */
+
+    #grid {
+        display: flex;
+        flex-direction: column;
+        align-self: self-start;
+        grid-area: escolha2;
+
+        height: fit-content;
+        width: 100%;
+    }
+
+    .btnOrc {
+        width: 90%;
+        height: 100px;
+
+        background-color: #2e2e2e4b;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    /* ----- Passo 3 ------- */
+    .grid3 {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        grid-area: escolha3;
+
+        width: fit-content;
+        height: fit-content;
+
+        button {
+            background-color: #2e2e2e4b;
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+        }
+
+    }
+
+    #valorLimiteMedio {
+        grid-template-columns: repeat(4, 15vh);
+        grid-template-rows: 1fr;
+        column-gap: 5vh;
+        height: 5vh;
+    }
+
+    #valorLimiteAlto {
+        grid-template-columns: repeat(4, 15vh);
+        grid-template-rows: 1fr;
+        column-gap: 5vh;
+        height: 5vh;
+    }
+
+
+    /* botoes */
+    #funcoes {
+        justify-self: center;
+        align-self: end;
+        column-gap: 5vw;
+        grid-area: botoes;
+
+        width: fit-content;
+        height: fit-content;
+
+        margin: 0;
+
+        button {
+            background-color: #2e2e2e4b;
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+
+    #passo1 {
+        justify-content: space-between;
+    }
+
+    .btnCard {
+        justify-self: center;
+    }
+}

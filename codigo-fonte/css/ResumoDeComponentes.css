@@ -1,0 +1,810 @@
+body {
+    font-family: roboto;
+    padding: 0px;
+    margin: 0px;
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(20px)brightness(0.9);
+}
+
+.Conteudo {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JanelaResumo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Roboto;
+    font-size: x-large;
+    text-align: center;
+    background-color: #2e2e2e69;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    width: 90%;
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.janelaTitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.placaMae {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.ram {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.gpu {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.armazenamento {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.fonte {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.gabinete {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.cooler {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.cpu {
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+.cpuTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.cpuElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.cpuModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.cpuPreco p {
+    font-size: 26px;
+}
+
+.placaMaeTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.placaMaeElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.placaMaeModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.placaMaePreco {
+    display: flex;
+    align-items: center;
+}
+
+.placaMaePreco p {
+    font-size: 26px;
+}
+
+
+.ramTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.ramElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.ramModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.ramPreco {
+    display: flex;
+    align-items: center;
+}
+
+.ramPreco p {
+    font-size: 26px;
+}
+
+.gpuTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.gpuElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.gpuModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.gpuPreco {
+    display: flex;
+    align-items: center;
+}
+
+.gpuPreco p {
+    font-size: 26px;
+}
+
+.armazenamentoTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.armazenamentoElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.armazenamentoModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.armazenamentoPreco {
+    display: flex;
+    align-items: center;
+}
+
+.armazenamentoPreco p {
+    font-size: 26px;
+}
+
+.fonteTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.fonteElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.fonteModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.fontePreco {
+    display: flex;
+    align-items: center;
+}
+
+.fontePreco p {
+    font-size: 26px;
+}
+
+.gabineteTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.gabineteElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.gabineteModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.gabinetePreco {
+    display: flex;
+    align-items: center;
+}
+
+.gabinetePreco p {
+    font-size: 26px;
+}
+
+.coolerTitulo {
+    font-size: 32px;
+    display: flex;
+    margin: 20px 0 20px 40px;
+}
+
+.coolerElementos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+.coolerModelo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 0 20px;
+}
+
+.coolerPreco {
+    display: flex;
+    align-items: center;
+}
+
+.coolerPreco p {
+    font-size: 26px;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botaoResumoAvisoDIV {
+    display: none;
+    justify-content: center
+}
+
+.botaoResumoAviso {
+    margin: 0 5px 0 5px;
+}
+
+.comprarbotao,
+.botaoAviso,
+.botaoResumoAviso {
+    border-radius: 25px;
+    border: 0;
+    padding: 15px;
+    background-color: #41ae4f;
+    color: aliceblue;
+    font-size: x-large;
+
+}
+
+.comprarbotao:hover,
+.botaoAviso:hover,
+.botaoResumoAviso:hover,
+.botaoRefazer:hover {
+    background-color: #31833c;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.orcamentoTotal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px;
+    width: 350px;
+    color: white;
+}
+
+
+.orcamento {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+}
+
+.totalparcial {
+    display: flex;
+    padding: 8px 16px 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+
+}
+
+.centralizando {
+    display: flex;
+}
+
+.centralizarOrcamento {
+    display: flex;
+    position: sticky;
+    background-color: #2e2e2e;
+    box-shadow: 0 -30px 30px -30px rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0;
+    margin: 0 0 -50px 0;
+}
+
+.botaoRefazer {
+    border-radius: 25px;
+    border: 0;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    background-color: #41ae4f;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+.botaoRefazerDIV {
+    display: flex;
+}
+
+#alterarbotoes {
+    border-radius: 25px;
+    border: 0;
+    padding: 15px;
+    background-color: #dcdcdc;
+    color: #2e2e2e;
+    font-size: x-large;
+}
+
+#alterarbotoes:hover {
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cpuModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.placaMaeModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.ramModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.gpuModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.armazenamentoModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.fonteModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.gabineteModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.coolerModelo img {
+    width: 100px;
+    height: 100px;
+}
+
+.cpuAviso,
+.placaMaeAviso,
+.ramAviso,
+.gpuAviso,
+.armazenamentoAviso,
+.fonteAviso,
+.gabineteAviso,
+.coolerAviso {
+    display: none;
+    justify-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.erroResumo {
+    background-color: #2e2e2e;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 50px 10px 50px;
+}
+
+@media (max-width: 950px) {
+    .centralizarOrcamento {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .orcamentoTotal {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .centralizando {
+        justify-content: center;
+    }
+
+    .botaoRefazerDIV {
+        justify-content: center;
+    }
+
+    .cpuElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cpuModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .cpuModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cpu p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .placaMaeElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .placaMaeModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .placaMaeModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .placaMae p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .ramElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ramModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .ramModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .ram p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .gpuElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gpuModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .ramModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gpu p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .armazenamentoElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .armazenamentoModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .armazenamentoModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .armazenamento p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .fonteElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fonteModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .fonteModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fonte p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .gabineteElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gabineteModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .gabineteModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gabinete p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .coolerElementos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coolerModelo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .coolerModelo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cooler p {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: -10px 0 0 0;
+    }
+
+    .centralizarOrcamento {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .orcamentoTotal {
+        gap: 20px;
+    }
+
+    .orcamento {
+        gap: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .totalparcial {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #orcTotal {
+        margin: -20px 0 0 0;
+    }
+
+    #parcialTotal {
+        margin: -20px 0 0 0;
+    }
+
+    .janelaTitulo {
+        font-size: large;
+    }
+
+    .cpu {
+        margin: 0 5px 10px 5px;
+    }
+
+    .placaMae {
+        margin: 0 5px 10px 5px;
+    }
+
+    .ram {
+        margin: 0 5px 10px 5px;
+    }
+
+    .gpu {
+        margin: 0 5px 10px 5px;
+    }
+
+    .armazenamento {
+        margin: 0 5px 10px 5px;
+    }
+
+    .fonte {
+        margin: 0 5px 10px 5px;
+    }
+
+    .gabinete {
+        margin: 0 5px 10px 5px;
+    }
+
+    .cooler {
+        margin: 0 5px 10px 5px;
+    }
+}

@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: 85vh;
+}
+
+body {
+    font-family: roboto;
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(20px)brightness(0.9);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/*TITULO DAS SEÇÕES DA PAG*/
+.titulopagina {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    width: fit-content;
+}
+
+.titdesc {
+    margin-top: 10px;
+    color: white;
+}
+
+.titlinha h1 {
+    color: white;
+    font-size: x-large;
+}
+
+/* RESUMO DOS COMPONENTES */
+.resumoComponente {
+    background-color: #2e2e2e;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    height: fit-content;
+    width: 80%;
+    border-radius: 20px;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+
+    color: white;
+
+    img {
+        display: none;
+    }
+
+    .guia {
+        display: none;
+    }
+}
+
+/* ARTICLE QUE SEGURA TODA A PARTE DE DIVISAO, FILTRO, ESCOLHA E AVANCAR */
+
+.containerEscolhaProx {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* DIVISAO P/ ESCOLHA */
+.divisaoh1 {
+    font-size: x-large;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* --------COMECO---------------DIV QUE SEGURA BUSCA FILTRO E ESCOLHA-------------------- */
+.escolhaComponentes {
+    width: 95%;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BUSCA E FILTRO */
+.buscaFiltro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 20px;
+    padding: 10px 0;
+
+    .buscar {
+        position: relative;
+        display: flex;
+        height: 30px;
+
+        .busca {
+            border: none;
+            max-width: 200px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        button {
+            width: 30px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+            filter: invert();
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40%;
+            }
+        }
+        button:active{
+            transform: scale(0.9);
+            transition: 0.2s;
+        }
+    }
+
+    .filtrar {
+        display: flex;
+        height: 30px;
+        gap: 15px;
+        margin: 5px 0;
+
+        .ordemTxt {
+            color: white;
+            align-self: center;
+            width: 100%;
+            text-align: right;
+        }
+
+        select,
+        option {
+            width: 60px;
+            border: none;
+            border-radius: 10px;
+
+            background-color: #41ae4f;
+            color: white;
+            padding-left: 10px;
+            border: 1px solid #2e2e2e;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            min-width: 20px;
+            max-width: 300px; /* Adjust as needed */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a more modern look */
+        }
+        select:hover,
+        option:hover{
+            background-color: #31833c;
+            transition: 0.3s;
+        }
+    }
+}
+
+/* ESCOLHA DE COMP */
+.opcoesComponentes {
+    margin: 10px 0;
+    width: 100%;
+    height: 55vh;
+    overflow: auto;
+
+    .opcaoComponente {
+        display: grid;
+        grid-template-areas: "img preco alerta";
+        grid-template-columns: 20% 50% 25%;
+        column-gap: 2.5%;
+
+        background-color: #2e2e2e;
+        border-radius: 20px;
+        padding: 15px 20px;
+        margin: 10px 0;
+        align-items: center;
+
+        .nomePreco {
+            grid-area: preco;
+            display: flex;
+            flex-direction: column;
+
+            .nome,
+            .preco {
+                font-size: medium;
+                color: white;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                text-align: left;
+            }
+
+            .preco:nth-child(2) {
+                font-weight: bold;
+            }
+
+        }
+
+        .imgComponente {
+            grid-area: img;
+            justify-self: center;
+            width: 80px;
+            height: 80px;
+
+            .imagemComponente {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .alertas {
+            grid-area: alerta;
+
+            display: grid;
+            grid-template-areas:
+                "alertadesempenho alertadesempenho"
+                "maisinfo add";
+            gap: 5px;
+            text-align: center;
+            max-width: 160px;
+
+            .alertaDesempenho {
+                grid-area: alertadesempenho;
+                border-radius: 10px;
+                padding: 2px;
+                font-size: small;
+            }
+
+            .maisInfo {
+                grid-area: maisinfo;
+                border-radius: 10px;
+                background-color: #dcdcdc;
+                border: none;
+                cursor: pointer;
+                padding: 2px;
+                font-size: small;
+                width: 100%;
+
+                .maisInfoLink {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .maisInfo:hover {
+                background-color: white;
+                transition: 0.2s ease-in-out;
+            }
+
+            .addComponente {
+                grid-area: add;
+                justify-self: center;
+                align-self: center;
+
+                border: none;
+                width: 100%;
+                height: 100%;
+                min-height: 30px;
+                font-size: x-large;
+
+                border-radius: 10px;
+                background-color: #308041;
+                color: white;
+                cursor: pointer;
+
+                #check {
+                    display: flex;
+                    margin: 0 auto;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            .addComponente:hover {
+                background-color: #0a4212;;
+                transition: 0.2s ease-in-out;
+            }
+            
+        }
+    }
+}
+
+/* --------FIM-------------DIV QUE SEGURA BUSCA FILTRO E ESCOLHA-------------------- */
+
+/* BOTAO FIXO ORÇAMENTO TOTAL // AVANCAR */
+.orcamentoTotaleAvancar {
+    width: 100%;
+    height: 90px;
+    margin: 20px 0;
+    border-radius: 20px;
+    align-self: center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .orcamentoTotal {
+        font-weight: bold;
+        font-size: 15px;
+        margin: 10px;
+        border-radius: 20px;
+        width: 250px;
+        color: white;
+
+
+        .orcamento {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 8px;
+            border-radius: 20px 20px 0 0;
+            background-color: #41ae4f;
+            justify-content: space-between;
+        }
+
+        .totalparcial {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 8px;
+            border-radius: 0 0 20px 20px;
+            background-color: #2e2e2e;
+            justify-content: space-between;
+
+        }
+    }
+
+    .proxComponente {
+        border-radius: 20px;
+        border: none;
+        margin: 5px;
+        width: 150px;
+        height: 69px;
+        background-color: #41ae4f;
+        cursor: pointer;
+
+        font-size: 20px;
+        color: white;
+    }
+
+    #voltar {
+        background-color: #d9d9d9;
+        color: black;
+    }
+
+    #voltar:hover {
+        background-color: white;
+    }
+
+    .proxComponente:hover {
+        background-color: #31833c;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+/* RESPONSIVIDADE 950PX */
+
+@media (min-width: 950px) {
+    .wrapper {
+        display: grid;
+        grid-template-rows: 140px;
+        grid-template-areas:
+            "titulopag containerEscolha"
+            "resumo containerEscolha"
+            "resumo containerEscolha";
+    }
+
+    .containerEscolhaProx {
+        grid-area: containerEscolha;
+        display: flex;
+        flex-direction: column;
+        background-color: #2e2e2e4b;
+        box-shadow: -20px 13px 30px 0px rgba(0, 0, 0, 0.5);
+        height: 100%;
+    }
+
+    .titulopagina {
+        grid-area: titulopag;
+        margin-left: 40px;
+
+        .titdesc {
+            margin-top: 10px;
+        }
+
+        .titlinha h1 {
+            font-size: xx-large;
+        }
+    }
+
+    .resumoComponente {
+
+        background-color: #2e2e2e8f;
+        grid-area: resumo;
+        margin-left: 40px;
+        align-self: flex-start;
+        margin-top: 20px;
+
+        height: 420px;
+
+        display: grid;
+        grid-template-areas:
+            "img tit"
+            "img desc"
+            "img guia";
+
+        h2 {
+            grid-area: tit;
+            font-size: x-large;
+            align-self: center;
+            justify-self: center;
+        }
+
+        p {
+            grid-area: desc;
+            align-self: center;
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        div {
+            grid-area: img;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            object-fit: cover;
+        }
+
+        .guia {
+            grid-area: guia;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+            align-self: center;
+
+            border-radius: 15px;
+            border: none;
+            width: 100px;
+            height: 30px;
+            background-color: #41ae4f;
+            cursor: pointer;
+            color: white;
+
+            padding: 20px 0;
+        }
+    }
+
+    .divisaoh1 {
+        margin: 20px auto;
+        font-size: xx-large;
+        text-align: center;
+
+    }
+
+    .escolhaComponentes {
+        margin: 0 auto;
+    }
+
+    .orcamentoTotaleAvancar {
+        margin: 20px auto;
+    }
+
+}
+
+/* RESPONSIVIDADE 1500px */
+
+@media (min-width: 1500px) {
+
+    .escolhaComponentes {
+        width: 800px;
+        margin: 0px 20px;
+    }
+
+    .opcoesComponentes {
+        height: 55vh;
+
+        .opcaoComponente {
+            .nomePreco {
+
+                .nome,
+                .preco {
+                    font-size: x-large;
+                }
+            }
+
+            .alertas {
+                .alertaDesempenho {
+                    font-size: medium;
+                }
+
+                .maisInfo {
+                    font-size: medium;
+                }
+            }
+        }
+    }
+
+    .buscaFiltro {
+        width: 100%;
+        justify-content: space-around;
+        
+        .buscar {
+            position: relative;
+            display: flex;
+            height: 30px;
+
+            .busca {
+                border: none;
+                min-width: 400px;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: medium;
+            }
+        }
+
+        .filtrar {
+            display: flex;
+            height: 30px;
+            gap: 15px;
+            margin: 5px 0;
+
+            select,
+            option {
+                font-size: medium;
+                width: 160px;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .resumoComponente {
+
+        h2 {
+            font-size: x-large;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .guia {
+            font-size: medium;
+            padding: 20px 0;
+        }
+    }
+
+    .orcamentoTotaleAvancar {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .orcamentoTotal {
+            width: 400px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .orcamento {
+                padding: 10px;
+                height: 30%;
+                font-size: x-large;
+                font-weight: normal;
+            }
+
+            .totalparcial {
+                padding: 10px;
+                height: 30%;
+                justify-self: center;
+                font-size: x-large;
+                font-weight: normal;
+            }
+        }
+
+        .proxComponente {
+            border-radius: 20px;
+            border: none;
+            margin: 10px;
+            background-color: #41ae4f;
+            cursor: pointer;
+
+            font-size: x-large;
+        }
+
+    }
+}
+
+
+/* CLASSE CRIADA NO JS NAO MEXA */
+.opcaoSelecionada {
+    background-color: #709b70 !important;
+    transition: 0.3s ease-in-out;
+}

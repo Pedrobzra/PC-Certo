@@ -1,0 +1,392 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+    background: url("../img/menuInicial.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.Conteudo {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Janela do Cadastro */
+.JanelaCadastro {
+    background-color: #2e2e2e69;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+/* Título "Cadastre-se" */
+.JanelaCadastro h1,
+.janelaSucesso h1 {
+    color: white;
+    font-family: Roboto;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Conjunto das classes .Parte organizado */
+.organizar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Conjunto de 2 inputs organizados em coluna (Nome de usuário, Email // Senha, Confirmar senha) */
+.Parte {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Conjunto de um input com sua mensagem de erro organizado em coluna (normalmente oculta) */
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Inputs */
+.Parte .campo input {
+    color: white;
+    font-family: Roboto;
+    background: transparent;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px 10px 40px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+/* Texto Placeholder dos inputs */
+input::placeholder {
+    color: #e6e6e6;
+    font-family: Roboto;
+}
+
+/* Todos os erros ocultos */
+.erro {
+    opacity: 0;
+    text-align: center;
+}
+
+/* Formatação das mensagens de erro */
+.erroNomeEmail,
+.erroSenhaConfirmacao {
+    font-family: Roboto;
+    font-size: x-small;
+    color: #e63636;
+}
+
+/* Posição e organização das mensagens de erro */
+.nome,
+.email,
+.senha,
+.confirmacao {
+    display: flex;
+    align-items: center;
+    width: 246px;
+    justify-content: center;
+}
+
+/* Termos de uso */
+label {
+    font-family: Roboto;
+    font-size: small;
+    color: white;
+}
+
+.concordoTermos {
+    margin: 0 0 0 5px;
+}
+
+
+a {
+    color: white;
+}
+
+.organizarTermos {
+    display: flex;
+    width: 97%;
+}
+
+/* Caixa de Check */
+
+.checkbox {
+    display: block;
+}
+
+.checkbox input {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: 67px;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.checkbox:hover input~.checkmark {
+    background-color: #7a7a7a;
+    transition: 0.2s;
+}
+
+.checkbox input:checked~.checkmark {
+    background-color: #2e2e2e;
+    transition: 0.1s;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Posição e organização dos Termos de uso */
+.termosuso {
+    display: inline-block;
+    margin: 0 7px 0 7px;
+}
+
+/* Mensagem de erro dos Termos de uso */
+.erroTermos {
+    display: flex;
+    font-family: Roboto;
+    font-size: x-small;
+    color: #e63636;
+    margin: 5px 0 0 5px;
+}
+
+/* Conjunto dos botões "Cadastrar" e "Cancelar" */
+.botoes {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+
+/* Botão Cancelar */
+button.Cancelar {
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    background-color: #7a7a7a;
+    padding: 25px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 150px;
+    margin: 10px;
+}
+
+/* Botão Cadastrar */
+button.Cadastrar {
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    background: #41ae4f;
+    padding: 25px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 150px;
+    margin: 10px;
+}
+
+/* Botão Cadastrar ao passar o mouse */
+button.Cadastrar:hover,
+.fazerLogin:hover {
+    background-color: #31833c;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Botão Cancelar ao passar o mouse */
+button.Cancelar:hover {
+    background-color: #A7A5A5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.campoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    translate: 30px;
+}
+
+.passwordIconF {
+    display: flex;
+    translate: -50px;
+    opacity: 0;
+}
+
+.passwordIcon {
+    display: flex;
+    translate: -40px;
+}
+
+.passwordIcon:hover {
+    cursor: pointer;
+}
+
+.sucessoCadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.janelaSucesso {
+    background-color: #2e2e2e90;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.sucessoTexto {
+    font-family: Roboto;
+    color: white;
+}
+
+.loginTexto {
+    font-family: Roboto;
+    color: white;
+    margin: -5px 0 20px 0;
+}
+
+.fazerLogin {
+    color: white;
+    font-family: Roboto;
+    font-size: medium;
+    background: #41ae4f;
+    padding: 25px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 150px;
+    margin: 10px;
+}
+
+.checkGIF {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.checkPNG {
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .organizar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .JanelaCadastro {
+        padding: 2px;
+        margin: 10px 0 0 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        left: 18px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .JanelaCadastro {
+        padding: 10px 0 10px 0;
+        margin: 10px 0 0 0;
+    }
+
+    .Parte .campo input {
+        width: 100%;
+    }
+
+    .termosuso {
+        margin: 0 20px 0 20px;
+    }
+
+    .checkmark {
+        position: absolute;
+        left: 25px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 831px) {
+    .JanelaCadastro {
+        margin: 10px 0 0 0;
+    }
+
+    .organizar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
